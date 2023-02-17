@@ -1,0 +1,9 @@
+#informaçao {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 20px black;
+    
+    padding: 20px;
+    width: 80%;
+    margin: 15px auto 15px auto;
+    text-align: justify;
+}

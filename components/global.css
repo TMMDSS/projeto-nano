@@ -10,12 +10,12 @@
 }
 body {
     background-image: linear-gradient(to bottom, rgb(1, 24, 54), rgb(22, 154, 158));
-    padding: 15px;
 }
 
 :root {
 
-    --cor-fonte: white;
+    --cor-fonte: #F5EFF1;
+    --cor-hover: rgb(8, 204, 188);
 
     --fonte-destaque: 'Bungee Hairline', cursive;
     --fonte-padrao: 'Aldrich', sans-serif;
