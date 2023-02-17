@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(to bottom, rgb(1, 24, 54), rgb(22, 154, 158));
+    padding: 15px;
+}
+
+:root {
+
+    --cor-fonte: white;
+
+    --fonte-destaque: 'Bungee Hairline', cursive;
+    --fonte-padrao: 'Aldrich', sans-serif;
+
+
+
+
+}

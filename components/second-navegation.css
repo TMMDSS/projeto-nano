@@ -1,0 +1,14 @@
+#segunda-navegaçao {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgba(0, 0, 0, 0.171);
+    padding: 15px;
+    border-radius: 50px;
+    height: 75px;
+}
+
+#segunda-navegaçao a {
+    color: var(--cor-fonte);
+    text-decoration: none;
+}
