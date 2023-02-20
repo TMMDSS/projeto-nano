@@ -1,5 +1,7 @@
 #informaçao {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(20, 89, 121);
+    color: white;
+    font-size: 1.2em;
     box-shadow: inset 0px 0px 20px black;
     
     padding: 20px;
