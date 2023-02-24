@@ -1,0 +1,16 @@
+.botao-habilidades {
+    display: block;
+    background-color: var(--cor-botao);
+    color: white;
+    box-shadow: 0px 0px 10px black;
+    font-size: 1.5em;
+    font-family: var(--fonte-padrao);
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.botao-habilidades:hover {
+    background-color: var(--cor-hover);
+}
