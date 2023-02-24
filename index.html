@@ -34,7 +34,7 @@
         </section>
 
         <section id="segunda-navegaçao">
-                <button class="botao-habilidades">Skills</button>
+                <button class="botao-habilidades" onclick="clickMenu()">Skills</button>
         </section>
 
         <section id="informaçao">
@@ -70,5 +70,15 @@
             <p>made by someone<br>not me</p>
         </footer>
     </main>
+
+    <script>
+            function clickMenu() {
+        if (informaçao.style.display == 'block') {
+            informaçao.style.display = 'none'
+        } else {
+            informaçao.style.display = 'block'
+        }          
+    }
+    </script>
 </body>
 </html>
