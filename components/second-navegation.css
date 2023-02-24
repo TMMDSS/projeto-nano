@@ -4,19 +4,5 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.171);
     padding: 15px;
-    border-radius: 50px;
     height: 75px;
-}
-
-#segunda-navegaçao a {
-    color: var(--cor-fonte);
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.144);
-    padding: 15px;
-    border-radius: 15px;
-}
-
-#segunda-navegaçao a:hover {
-    background-color: var(--cor-hover);
-    color: black;
 }
