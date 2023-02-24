@@ -4,8 +4,30 @@
     font-size: 1.2em;
     box-shadow: inset 0px 0px 20px black;
     
-    padding: 20px;
-    width: 80%;
     margin: 15px auto 15px auto;
     text-align: justify;
+}
+
+.html {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.css {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.js {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
 }
