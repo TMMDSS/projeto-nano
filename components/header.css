@@ -9,19 +9,22 @@
 }
 
 .navegação {
-    background-color: rgba(0, 0, 0, 0.055);
     padding: 30px;
-    border-radius: 50px;
 }
 
 .navegação > a {
     color: var(--cor-fonte);
     text-decoration: none;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .navegação > a:hover {
     background-color: var(--cor-hover);
+}
+
+.avatar-img {
+    cursor: pointer;
 }
 
 
