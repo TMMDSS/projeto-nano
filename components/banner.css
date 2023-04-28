@@ -5,7 +5,8 @@
 }
 
 #imgBanner {
-    padding: 25px 0px 25px 25px;
+    width: 825px;
+    padding: 5px 0px 5px 5px;
 }
 
 #imgBanner > img {
