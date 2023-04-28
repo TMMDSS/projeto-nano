@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="components/global.css">
     <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/btnMenu.css">
+    <link rel="stylesheet" href="components/navegação.css">
     <link rel="stylesheet" href="components/banner.css">
     <link rel="stylesheet" href="components/second-navegation.css">
     <link rel="stylesheet" href="components/informaçao.css">
@@ -14,77 +16,88 @@
     <link rel="stylesheet" href="components/botao-habilidades.css">
 </head>
 <body>
-    <header>
-        <div id="menu-bar">
-            <img class="avatar-img" src="imagens/logo-header.png" alt="">
-            <nav class="navegação">
-                <a href="">Home</a>
-                <a href="">About me</a>
-                <a href="#segunda-navegaçao">Skills</a>
-            </nav>
+      
+<header id="header">
+    <a href="#"><img class="avatar-img" src="imagens/logo-header.png" alt=""></a>
+    <button id="btnMenu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+    </button>
+    <nav class="navegação">
+        <a href="">Home</a>
+        <a href="">About me</a>
+        <a href="#segunda-navegaçao">Skills</a>
+    </nav>
+</header>
+
+<main>
+    <section id="banner">
+        <div id="tituloBanner">
+            <h1>Nano machine</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est quo enim, aliquid optio debitis magnam doloribus nam illo, ut ipsa, neque atque officiis dolor voluptate esse eius cupiditate laudantium?</p>
         </div>
-    </header>
-    <main>
-
-        <section id="banner">
-            <div id="tituloBanner">
-                <h1>Nano machine</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est quo enim, aliquid optio debitis magnam doloribus nam illo, ut ipsa, neque atque officiis dolor voluptate esse eius cupiditate laudantium?</p>
+        <div id="imgBanner">
+            <img src="imagens/nano-big.png" alt="">
+        </div>
+    </section>
+    <section id="segunda-navegaçao">
+        <button class="botao-habilidades" onclick="clickMenu()">Skills</button>
+    </section>
+    <section id="informaçao">
+        <section id="wrapper">
+            <div class="html">
+                <div class="areaImg">
+                    <img src="imagens/imagem-1.webp" alt="">
+                </div>
+                <div>
+                    <label for="html">HTML</label>
+                    <progress id="html" value="30" max="100"></progress>
+                </div>
             </div>
-            <div id="imgBanner">
-                <img src="imagens/nano-big.png" alt="">
+            <div class="css">
+                <div class="areaImg">
+                    <img src="imagens/imagem-2.webp" alt="">
+                </div>
+                <div>
+                    <label for="css">CSS</label>
+                    <progress id="css" value="30" max="100"></progress>
+                </div>
             </div>
-
+            <div class="js">
+                <div class="areaImg">
+                    <img src="imagens/136530.png" alt="">
+                </div>
+                <div>
+                    <label for="js">JavaScript</label>
+                    <progress id="js" value="0" max="100"></progress>
+                </div>
+            </div>
         </section>
+    </section>
+    
+    <footer id="rodape">
+        <p>made by someone<br>not me</p>
+    </footer>
+</main>
 
-        <section id="segunda-navegaçao">
-                <button class="botao-habilidades" onclick="clickMenu()">Skills</button>
-        </section>
+<script>
+    const btn = document.querySelector('#btnMenu')
 
-        <section id="informaçao">
-            <div id="wrapper">
-                <div class="html">
-                    <div class="areaImg">
-                        <img src="imagens/imagem-1.webp" alt="">
-                    </div>
-                    <div>
-                        <label for="html">HTML</label>
-                        <progress id="html" value="30" max="100"></progress>
-                    </div>
-                </div>
-                <div class="css">
-                    <div class="areaImg">
-                        <img src="imagens/imagem-2.webp" alt="">
-                    </div>
-                    <div>
-                        <label for="css">CSS</label>
-                        <progress id="css" value="30" max="100"></progress>
-                    </div>
-                </div>
-                <div class="js">
-                    <div class="areaImg">
-                        <img src="imagens/136530.png" alt="">
-                    </div>
-                    <div>
-                        <label for="js">JavaScript</label>
-                        <progress id="js" value="0" max="100"></progress>
-                    </div>
-                </div>
-                        </section>
-            </div>
-        <footer id="rodape">
-            <p>made by someone<br>not me</p>
-        </footer>
-    </main>
+        function clickMenu() {
+    if (informaçao.style.display == 'block') {
+        informaçao.style.display = 'none'
+    } else {
+        informaçao.style.display = 'block'
+    }          
+}
 
-    <script>
-            function clickMenu() {
-        if (informaçao.style.display == 'block') {
-            informaçao.style.display = 'none'
-        } else {
-            informaçao.style.display = 'block'
-        }          
+
+    function animar() {
+        btn.classList.toggle('ativar')
     }
-    </script>
+
+    btn.addEventListener('click', animar)
+</script>
 </body>
 </html>
