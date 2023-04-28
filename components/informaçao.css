@@ -1,5 +1,5 @@
 #informaçao {
-    display: none;
+    display: block;
     background-color: rgb(20, 89, 121);
     color: white;
     font-size: 1.2em;
@@ -7,6 +7,21 @@
     width: 70%;
     margin: 15px auto 15px auto;
     text-align: justify;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.areaImg {
+    width: 250px;
+}
+
+.areaImg > img {
+    width: 80%;
 }
 
 .html {
