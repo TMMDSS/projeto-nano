@@ -22,6 +22,7 @@ const btn = document.querySelector('#btnMenu')
 
     let btnMenu = document.querySelector('#btnMenu')
     let nav = document.querySelector('#navegação')
+    let main = document.querySelector('#main')
 
 
     let showSideBar = true;
@@ -31,8 +32,17 @@ const btn = document.querySelector('#btnMenu')
     showSideBar = !showSideBar;
     if (showSideBar) {
         nav.style.marginLeft = '-100vw';
+        main.style.filter = ''
     } else {
         nav.style.marginLeft = '0vw';
+        main.style.filter = 'blur(2px)'
+    }
+}
+
+function closeSideBar() {
+    if (!showSideBar) {
+        toggleSideBar()
+        btn.classList.toggle('ativar')
     }
 }
 

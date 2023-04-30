@@ -7,6 +7,8 @@
     position: fixed;
     top: 0;
     margin-left: -100vw;
+    transition: ease-in .4s;
+    z-index: 2;
 }
 
 #navegação > a {

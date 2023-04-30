@@ -22,6 +22,7 @@
     font-size: 4em;
     font-family: var(--fonte-destaque);
     text-align: center;
+    user-select: none;
 }
 
 #banner p {
