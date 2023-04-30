@@ -21,3 +21,11 @@
 #navegação > a:hover {
     background-color: var(--cor-hover);
 }
+
+#imgNavegation {
+    padding: 15px;
+    object-fit: contain;
+    border: 2px solid var(--cor-hover);
+    margin: 10px 10px 25px 10px;
+    animation: pulse 5s linear infinite;
+}
