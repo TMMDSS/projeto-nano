@@ -1,16 +1,21 @@
-.navegação {
-    display: none;
-    gap: 20px;
-    padding: 20px;
+#navegação {    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-navegação);
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    margin-left: -100vw;
 }
 
-.navegação > a {
+#navegação > a {
     color: var(--cor-fonte);
     text-decoration: none;
     padding: 20px;
     border-radius: 5px;
 }
 
-.navegação > a:hover {
+#navegação > a:hover {
     background-color: var(--cor-hover);
 }

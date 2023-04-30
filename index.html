@@ -16,21 +16,26 @@
     <link rel="stylesheet" href="components/botao-habilidades.css">
 </head>
 <body>
-      
-<header id="header">
-    <a href="#"><img class="avatar-img" src="imagens/logo-header.png" alt=""></a>
-    <button id="btnMenu">
-        <span class="linha"></span>
-        <span class="linha"></span>
-        <span class="linha"></span>
-    </button>
-    <nav class="navegação">
-        <a href="">Home</a>
+    
+    <header id="header">
+        <a href="#"><img class="avatar-img" src="imagens/logo-header.png" alt=""></a>
+        <button id="btnMenu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+    </header>
+    
+    <nav id="navegação">
+        <a href="">About me</a>
+        <a href="">About me</a>
+        <a href="">About me</a>
+        <a href="">About me</a>
         <a href="">About me</a>
         <a href="#segunda-navegaçao">Skills</a>
     </nav>
-</header>
-
+    
+    
 <main>
     <section id="banner">
         <div id="tituloBanner">
@@ -81,23 +86,6 @@
     </footer>
 </main>
 
-<script>
-    const btn = document.querySelector('#btnMenu')
-
-        function clickMenu() {
-    if (informaçao.style.display == 'block') {
-        informaçao.style.display = 'none'
-    } else {
-        informaçao.style.display = 'block'
-    }          
-}
-
-
-    function animar() {
-        btn.classList.toggle('ativar')
-    }
-
-    btn.addEventListener('click', animar)
-</script>
+<script src="script.js"></script>
 </body>
 </html>
