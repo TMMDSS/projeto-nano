@@ -9,6 +9,18 @@
     margin-left: -100vw;
     transition: ease-in .4s;
     z-index: 2;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+}
+
+#navegação::-webkit-scrollbar {
+    width: 2px;
+    background: #08ccbc;
+}
+
+#navegação::-webkit-scrollbar-thumb {
+    background: black;
+    
 }
 
 #navegação > a {
@@ -20,6 +32,9 @@
 
 #navegação > a:hover {
     background-color: var(--cor-hover);
+    color: black;
+    transition: ease-in .1s;
+    padding-left: 10px; 
 }
 
 #imgNavegation {
