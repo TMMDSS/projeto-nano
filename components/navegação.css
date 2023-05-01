@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--cor-navegação);
+    font-family: var(--fonte-padrao);
     width: 30%;
     height: 100vh;
     position: fixed;
