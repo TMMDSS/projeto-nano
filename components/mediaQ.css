@@ -1,0 +1,26 @@
+
+@media screen and (max-width: 600px){
+
+    #btnMenu {
+        visibility: hidden;
+    }
+
+    #divBtnMenu2 {
+    visibility: visible;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #imgBanner {
+        display: none;
+        width: 100%;
+        background-color: red;
+        padding: 5px 0px 5px 5px;
+    }
+
+}

@@ -49,8 +49,14 @@ function closeSideBar() {
 
 btnMenu.addEventListener('click', toggleSideBar)
 
-    
+//AQUI COMEÇA O BOTAO DO CELULAR
+    let btnMenu2 = document.querySelector('#btnMenu2')
 
+    function animar2() {
+        btnMenu2.classList.toggle('ativar2')
+    }
+
+    btnMenu2.addEventListener('click', animar2)
 
 
 
