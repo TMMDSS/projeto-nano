@@ -62,10 +62,10 @@ btnMenu.addEventListener('click', toggleSideBar)
     function navegationMobile() { 
         showSideBar = !showSideBar
         if (showSideBar) {
-            nav.style.marginTop = '-100vh';
+            nav.style.marginLeft = '-100vw';
     } else {
            
-            nav.style.marginTop = '186px'
+            nav.style.marginLeft = '0vw'
     }
 }
     btnMenu2.addEventListener('click', navegationMobile)

@@ -1,19 +1,20 @@
 
 @media screen and (max-width: 600px){
-    main {
-        z-index: 1;
-    }
 
     #header {
-        position: relative;
-        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 185px;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.171);
     }
 
     #btnMenu {
-        visibility: hidden;
+        display: none;
     }
 
-    #divBtnMenu2 {
+    #btnMenu2 {
         display: block;
     }
 
@@ -22,13 +23,12 @@
         flex-direction: column;
         background-color: rgb(7, 12, 44);
         font-family: var(--fonte-padrao);
-        width: 100%;
+        width: 80%;
+        height: auto;
         position: absolute;
         top: 0px;
-        margin-top: -100vh;
-        margin-left: 0px;
         transition: ease-in .4s;
-        overflow-y: none;
+        overflow-y: hidden;
         z-index: 2;
         padding-bottom: 0px;
     }
