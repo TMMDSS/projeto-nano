@@ -1,7 +1,5 @@
 #divBtnMenu2 {
-    visibility: hidden;
-    display: flex;
-    align-items: center;
+    display: none;
     width: 100%;
     margin: auto;
     height: 70px;

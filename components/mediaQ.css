@@ -1,12 +1,40 @@
 
 @media screen and (max-width: 600px){
+    main {
+        z-index: 1;
+    }
+
+    #header {
+        position: relative;
+        z-index: 3;
+    }
 
     #btnMenu {
         visibility: hidden;
     }
 
     #divBtnMenu2 {
-    visibility: visible;
+        display: block;
+    }
+
+    #navegação {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(7, 12, 44);
+        font-family: var(--fonte-padrao);
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        margin-top: -100vh;
+        margin-left: 0px;
+        transition: ease-in .4s;
+        overflow-y: none;
+        z-index: 2;
+        padding-bottom: 0px;
+    }
+
+    #imgNavegation {
+        display: none;
     }
 
     #banner {
