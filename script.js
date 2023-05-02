@@ -64,7 +64,8 @@ btnMenu.addEventListener('click', toggleSideBar)
         if (showSideBar) {
             nav.style.marginTop = '-100vh';
     } else {
-            nav.style.marginTop = '50vh';
+           
+            nav.style.marginTop = '186px'
     }
 }
     btnMenu2.addEventListener('click', navegationMobile)
