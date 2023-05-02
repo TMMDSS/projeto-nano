@@ -1,40 +1,12 @@
 
-@media screen and (max-width: 320px){
-    body {
-        z-index: 0;
-    }
-
-    #main {
-        z-index: 0;
-    }
+@media screen and (max-width: 600px){
 
     #btnMenu {
-        visibility: visible;
+        visibility: hidden;
     }
 
     #divBtnMenu2 {
-        visibility: visible;
-    }
-
-    #header {
-        z-index: 1;
-    }
-
-    #navegação {    
-        visibility: visible;
-        width: 100%;
-        height: 500px;
-        top: 274px;
-        margin-left: 0px;
-        margin-top: -200vw;
-        transition: ease-in .4s;
-        z-index: 0;
-        overflow-y: scroll;
-        padding-bottom: 30px;
-    }
-
-    #imgNavegation {
-        display: none;
+    visibility: visible;
     }
 
     #banner {
