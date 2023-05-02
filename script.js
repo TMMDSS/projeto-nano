@@ -1,74 +1,66 @@
-/*AQUI COMEÇA O BOTAO DE SKILLS */
+let btnMenu = document.querySelector('#btnMenu')
+let main = document.querySelector('#main')
+let nav = document.querySelector('#navegação')
+let btnSkills = document.querySelector('#botao-habilidades')
+let info = document.querySelector('#informaçao')
+let show = true
+let show2 = true
 
-const btn = document.querySelector('#btnMenu')
+/*AQUI COMEÇA A ANIMAÇÃO DO BOTAO DE SKILLS */
 
-        function clickMenu() {
-    if (informaçao.style.display == 'block') {
-        informaçao.style.display = 'none'
-    } else {
-        informaçao.style.display = 'block'
-    }          
-}
-
-
-    function animar() {
-        btn.classList.toggle('ativar')
+    function animar2() {
+        btnSkills.classList.toggle('ativar2')
     }
 
-    btn.addEventListener('click', animar)
+    btnSkills.addEventListener('click', animar2)
+//----------------------------------------------------------------------
+/*AQUI COMEÇA O BATAO DE SKILLS */
+
+    function abaSkills() { 
+        show2 = !show2;
+        if (show2) {
+            info.style.display = 'none'
+    } else {
+            info.style.display = 'block'
+    }
+}
+    btnSkills.addEventListener('click', abaSkills)
+
+
+/*AQUI COMEÇA A ANIMAÇÃO DO BTN HEADER*/ 
+    function animar() {
+        btnMenu.classList.toggle('ativar')
+    }
+
+    btnMenu.addEventListener('click', animar)
 
 
 /*AQUI COMEÇA A BARRA DE NAVEGAÇÃO*/
 
-    let btnMenu = document.querySelector('#btnMenu')
-    let nav = document.querySelector('#navegação')
-    let main = document.querySelector('#main')
 
 
-    let showSideBar = true;
-    
-    
     function toggleSideBar() {
-    showSideBar = !showSideBar;
-    if (showSideBar) {
+    show = !show;
+    if (show) {
         nav.style.marginLeft = '-100vw';
         main.style.filter = ''
     } else {
         nav.style.marginLeft = '0vw';
-        main.style.filter = 'blur(2px)'
+        main.style.filter = 'brightness(65%)'
     }
 }
 
 function closeSideBar() {
-    if (!showSideBar) {
+    if (!show) {
         toggleSideBar()
-        btn.classList.toggle('ativar')
+        btnMenu.classList.toggle('ativar')
     }
 }
 
 
 btnMenu.addEventListener('click', toggleSideBar)
 
-//AQUI COMEÇA O BOTAO DO CELULAR
-    let btnMenu2 = document.querySelector('#btnMenu2')
-
-    function animar2() {
-        btnMenu2.classList.toggle('ativar2')
-    }
-
-    btnMenu2.addEventListener('click', animar2)
-
-
-    function navegationMobile() { 
-        showSideBar = !showSideBar
-        if (showSideBar) {
-            nav.style.marginLeft = '-100vw';
-    } else {
-           
-            nav.style.marginLeft = '0vw'
-    }
-}
-    btnMenu2.addEventListener('click', navegationMobile)
+    
 
 
 
