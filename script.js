@@ -33,6 +33,10 @@ let show2 = true
     }
 }
 
+btnMenu.addEventListener('click', toggleSideBar)
+
+/*AQUI É OQ PRECISA PARA PODER CLICAR FORA DO MENU LATERAL E FECHAR*/
+
 function closeSideBar() {
     if (!show) {
         toggleSideBar()
@@ -41,7 +45,6 @@ function closeSideBar() {
 }
 
 
-btnMenu.addEventListener('click', toggleSideBar)
 
 /*AQUI COMEÇA O BATAO DE SKILLS */
 
