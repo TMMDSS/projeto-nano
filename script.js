@@ -6,25 +6,8 @@ let info = document.querySelector('#informaçao')
 let show = true
 let show2 = true
 
-/*AQUI COMEÇA A ANIMAÇÃO DO BOTAO DE SKILLS */
-
-    function animar2() {
-        btnSkills.classList.toggle('ativar2')
-    }
-
-    btnSkills.addEventListener('click', animar2)
 //----------------------------------------------------------------------
-/*AQUI COMEÇA O BATAO DE SKILLS */
 
-    function abaSkills() { 
-        show2 = !show2;
-        if (show2) {
-            info.style.display = 'none'
-    } else {
-            info.style.display = 'block'
-    }
-}
-    btnSkills.addEventListener('click', abaSkills)
 
 
 /*AQUI COMEÇA A ANIMAÇÃO DO BTN HEADER*/ 
@@ -60,6 +43,26 @@ function closeSideBar() {
 
 btnMenu.addEventListener('click', toggleSideBar)
 
+/*AQUI COMEÇA O BATAO DE SKILLS */
+
+function abaSkills() { 
+    show2 = !show2;
+    if (show2) {
+        info.style.display = 'none'
+        
+} else {
+        info.style.display = 'block'
+    }
+}
+btnSkills.addEventListener('click', abaSkills)
+
+/*AQUI COMEÇA A ANIMAÇÃO DO BOTAO DE SKILLS */
+
+function animar2() {
+    btnSkills.classList.toggle('ativar2')
+}
+
+btnSkills.addEventListener('click', animar2)
     
 
 
