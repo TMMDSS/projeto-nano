@@ -1,4 +1,5 @@
 let btnMenu = document.querySelector('#btnMenu')
+let btnMenu2 = document.querySelector('#btnMenu2')
 let main = document.querySelector('#main')
 let nav = document.querySelector('#navegação')
 let btnSkills = document.querySelector('#botao-habilidades')
@@ -69,6 +70,28 @@ btnSkills.addEventListener('click', animar2)
     
 
 
+//AQUI COMEÇA A NAVEEGAÇÃO PARA CLL 
+
+function navMob() {
+    show = !show;
+    if (show) {
+        nav.style.marginTop = '-200vh';
+    } else {
+        nav.style.marginTop = '0vh';
+    }
+}
+
+btnMenu2.addEventListener('click', navMob)
+
+
+
+
+
+function animar3() {
+    btnMenu2.classList.toggle('ativar3')
+}
+
+btnMenu2.addEventListener('click', animar3)
 
 
 
