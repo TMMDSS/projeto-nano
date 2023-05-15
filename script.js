@@ -95,13 +95,6 @@ btnMenu2.addEventListener('click', animar3)
 
 
 
-const mediaQuery = window.matchMedia('(min-width: 600px)');
-
-if (mediaQuery.matches) {
-    nav.style.remove(marginTop = '-200vh')
-    nav.style.marginTop = ' ';
-  } 
-
 
 
 
